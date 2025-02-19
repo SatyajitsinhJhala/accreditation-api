@@ -2,8 +2,8 @@ from pydantic import BaseModel
 
 class NIRF_C7(BaseModel):
     year: int
-    program_name: str
-    program_level: str
+    branch_name: str
+    branch_level: str
     approved_intake: int
     actual_intake: int
     in_state_first_year: int

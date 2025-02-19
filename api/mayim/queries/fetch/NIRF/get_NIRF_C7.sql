@@ -1,7 +1,7 @@
 SELECT
     s.year_of_join AS year,
-    p.name AS program_name,
-    p.level AS program_level,
+    b.name AS branch_name,
+    p.name AS branch_level,
     p.sanctioned_intake AS approved_intake,
     COUNT(s.id) AS actual_intake,
     COUNT(CASE WHEN s.year_of_join = $year AND s.origin = 'IN_STATE' THEN 1 END) AS in_state_first_year,
